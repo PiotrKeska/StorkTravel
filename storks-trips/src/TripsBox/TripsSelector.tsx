@@ -25,11 +25,23 @@ const TripsSelector = () => {
     (country) => country.label === selectedCountry
   );
 
+  const selectedMembers = useTripsSelector((s) => s.tripFilters.members);
+  const setSelectedMembers = useTripsSelector((s) => s.setMembers);
+  const currentMembers = MemberSelector.find(
+    (member) => member.value === selectedMembers
+  );
+
+  const selectedScope = useTripsSelector((s) => s.tripFilters.scope);
+  const setSelectedScope = useTripsSelector((s) => s.setScope);
+  const currentScope = ScopeSelector.find(
+    (scope) => scope.value === selectedScope
+  );
+
   return (
     <>
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-          {currentCountry?.label || "Country"}
+          Country: {currentCountry?.label || "Country"}
         </MenuButton>
         <MenuList>
           {CountrySelector.map((country) => (
@@ -45,11 +57,15 @@ const TripsSelector = () => {
       </Menu>
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-          Members
+          Members: {currentMembers?.value || "Members"}
         </MenuButton>
         <MenuList>
           {MemberSelector.map((member) => (
-            <MenuItem key={member.value} value={member.value}>
+            <MenuItem
+              key={member.value}
+              value={member.value}
+              onClick={() => setSelectedMembers(member.value)}
+            >
               {member.value}
             </MenuItem>
           ))}
@@ -57,11 +73,15 @@ const TripsSelector = () => {
       </Menu>
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-          Price Scope
+          Price: {currentScope?.value || "Scope"}
         </MenuButton>
         <MenuList>
           {ScopeSelector.map((scope) => (
-            <MenuItem key={scope.value} value={scope.value}>
+            <MenuItem
+              key={scope.value}
+              value={scope.value}
+              onClick={() => setSelectedScope(scope.value)}
+            >
               {scope.value}
             </MenuItem>
           ))}
