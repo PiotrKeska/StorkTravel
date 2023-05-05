@@ -1,5 +1,5 @@
 const Header = () => {
-  return <div>Header</div>;
+  return <div>Header - Storks Trips</div>;
 };
 
 export default Header;
