@@ -10,6 +10,7 @@ const CountryFilter = () => {
   const currentCountry = CountrySelector.find(
     (country) => country.label === selectedCountry
   );
+
   return (
     <>
       <Menu>

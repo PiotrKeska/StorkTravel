@@ -1,17 +1,20 @@
-import axios from "axios"
-
- export interface Response {
-    result: []
-}
+// import axios, {AxiosRequestConfig} from "axios"
 
 
-const fetchData = () => {
-
-    return axios.get<Response>('../../db/db.json')
-    .then((res) => res.data)
-    .catch(() => console.log('error')
-    )
-}
 
 
-export default fetchData;
+
+
+// const axiosInstance = axios.create({
+//     baseURL: "../../db/db.json"
+// })
+
+// class Client<T>{
+    
+//     getAll = (config: AxiosRequestConfig) => {
+//         return axiosInstance.get<Response<T>>(config).then(res => res.data)
+        
+//     }
+// }
+
+// export default Client;
