@@ -4,10 +4,14 @@ interface Response {
     result: []
 }
 
-const API = axios.get<Response>('../../db/db.json')
-.then((res) => res.data)
-.catch(() => console.log('error')
-)
+
+const fetchData = () => {
+
+    return axios.get<Response>('../../db/db.json')
+    .then((res) => res.data)
+    .catch(() => console.log('error')
+    )
+}
 
 
-export default API;
+export default fetchData;
