@@ -1,0 +1,18 @@
+[
+    {
+        "TripId": 0,
+        "Country": "PL",
+        "Details": {
+            "NumOfMembers": 2,
+            "Price": "150 PLN"
+        }
+    },
+    {
+        "TripId": 1,
+        "Country": "PL",
+        "Details": {
+            "NumOfMembers": 4,
+            "Price": "300 PLN"
+        }
+    }
+]
