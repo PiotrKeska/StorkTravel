@@ -9,7 +9,7 @@
     },
     {
         "TripId": 1,
-        "Country": "PL",
+        "Country": "DE",
         "Details": {
             "NumOfMembers": 4,
             "Price": "300 PLN"
