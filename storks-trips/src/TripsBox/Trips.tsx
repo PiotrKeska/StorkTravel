@@ -1,3 +1,4 @@
+import TripsGrid from "./TripsGrid";
 import TripsSelector from "./TripsSelector";
 
 const Trips = () => {
@@ -5,6 +6,7 @@ const Trips = () => {
     <>
       <div>Trips</div>
       <TripsSelector />
+      <TripsGrid />
     </>
   );
 };
