@@ -1,29 +1,28 @@
 import { Menu, MenuButton, Button, MenuList, MenuItem } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import useTripsSelector from "../store";
-
-const MemberSelector = [{ value: 1 }, { value: 2 }, { value: 3 }, { value: 4 }];
+import useMembers from "./useMembers";
 
 const MemberFilter = () => {
   const selectedMembers = useTripsSelector((s) => s.tripFilters.members);
   const setSelectedMembers = useTripsSelector((s) => s.setMembers);
-  const currentMembers = MemberSelector.find(
-    (member) => member.value === selectedMembers
-  );
+
+  const currentMembers = useMembers();
+
   return (
     <>
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-          Members: {currentMembers?.value || "Members"}
+          Members: {selectedMembers || "Members"}
         </MenuButton>
         <MenuList>
-          {MemberSelector.map((member) => (
+          {currentMembers.map((member) => (
             <MenuItem
-              key={member.value}
-              value={member.value}
-              onClick={() => setSelectedMembers(member.value)}
+              key={member}
+              value={member}
+              onClick={() => setSelectedMembers(member)}
             >
-              {member.value}
+              {member}
             </MenuItem>
           ))}
         </MenuList>
