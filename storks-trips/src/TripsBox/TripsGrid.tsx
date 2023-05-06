@@ -11,19 +11,13 @@ const TripsGrid = () => {
 
   return (
     <>
-      {/* {data?.results.map((el) => (
-        <React.Fragment key={el.TripId}>
-          <h4>Destination: {el.Country}</h4>
-          <p>Number of members: {el.Details.NumOfMembers}</p>
-          <p>Price: {el.Details.Price}</p>
-          <hr></hr>
-        </React.Fragment>
-      ))} */}
       {arr?.map((el) => (
         <React.Fragment key={el.TripId}>
           <h4>Destination: {el.Country}</h4>
           <p>Number of members: {el.Details.NumOfMembers}</p>
-          <p>Price: {el.Details.Price}</p>
+          <p>
+            Price: {el.Details.Price} {el.Details.Currency}
+          </p>
           <hr></hr>
         </React.Fragment>
       ))}
