@@ -1,10 +1,10 @@
 import React from "react";
 import useTrips from "./useTrips";
-import membersFilter from "../utils/filters";
+import scopeFilter from "../utils/filters";
 
 const TripsGrid = () => {
   const { data, isLoading, error } = useTrips();
-  const arr = membersFilter();
+  const arr = scopeFilter();
 
   if (error) return null;
   if (isLoading) return <div>Loading....</div>;

@@ -3,10 +3,10 @@ import { BsChevronDown } from "react-icons/bs";
 import useTripsSelector from "../store";
 
 const ScopeSelector = [
-  { value: "0-100" },
-  { value: "100-200" },
-  { value: "200-300" },
-  { value: "300-400" },
+  { value: 100 },
+  { value: 200 },
+  { value: 300 },
+  { value: 400 },
 ];
 
 const ScopeFilter = () => {

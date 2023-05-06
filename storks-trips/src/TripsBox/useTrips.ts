@@ -8,7 +8,8 @@ import axios from "axios";
 
 interface Details {
     NumOfMembers: number | string;
-    Price: string;
+    Price: number;
+    Currency: string
 }
 export interface Trip {
     TripId: number;

@@ -29,4 +29,24 @@ const membersFilter = () => {
 
 }
 
-export default membersFilter;
+
+const scopeFilter = () => {
+    const afterMembFilter = membersFilter();
+    const selectedScope = useTripsSelector((s) => s.tripFilters.scope);
+
+    switch (selectedScope) {
+        case 100:
+            return afterMembFilter?.filter((el) => el.Details.Price < 101)
+        case 200:
+            return afterMembFilter?.filter((el) => el.Details.Price < 201)
+        case 300:
+            return afterMembFilter?.filter((el) => el.Details.Price < 301)
+        case 400:
+            return afterMembFilter;
+    
+    }
+
+
+}
+
+export default scopeFilter;
