@@ -1,26 +1,22 @@
+import React from "react";
 import useTrips from "./useTrips";
 
-interface Trip {
-  trip: Trip;
-}
-
 const TripsGrid = () => {
-  const { data } = useTrips();
-  console.log(data);
+  const { data, isLoading, error } = useTrips();
+
+  if (error) return null;
+  if (isLoading) return <div>Loading....</div>;
 
   return (
     <>
-      {/* {data?.result.map((trip) => (
-        <div key={trip.TripId}>
-          <p>{trip.Country}</p>
-          <p>{trip.Details.NumOfMembers}</p>
-          <p>{trip.Details.Price}</p>
-        </div>
-      ))} */}
-      <p></p>
-      <p>Destination</p>
-      <p>Number of members</p>
-      <p>Price</p>
+      {data?.results.map((el) => (
+        <React.Fragment key={el.TripId}>
+          <h4>Destination: {el.Country}</h4>
+          <p>Number of members: {el.Details.NumOfMembers}</p>
+          <p>Price: {el.Details.Price}</p>
+          <hr></hr>
+        </React.Fragment>
+      ))}
     </>
   );
 };

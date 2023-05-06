@@ -1,13 +1,10 @@
 
 import { useQuery } from "@tanstack/react-query";
-import useTripsSelector from "./store";
 import axios from "axios";
 
 
 
-interface Response <T>{
-    result: T[];
-}
+
 
 interface Details {
     NumOfMembers: number;
@@ -19,11 +16,19 @@ export interface Trip {
     Details: Details;
 }
 
+interface Response{
+    results: Trip[];
+}
+
+const fetchData = () => {
+    return axios.get("../../db/db.json").then((res)=> res.data)
+}
+
 const useTrips = () => {
-    // const tripFilters = useTripsSelector((s) => s.tripFilters);
-    return useQuery<Response<Trip>>({
+    return useQuery<Response>({
         queryKey: ['trips'],
-        queryFn: () => axios.get("../../db/db.json").then((res)=> res.data),
+        queryFn: fetchData ,
+        staleTime: 5 * 60 * 1000, //5min
     })
 }
 
