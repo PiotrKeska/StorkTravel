@@ -27,6 +27,33 @@
                     "NumOfMembers": 3,
                     "Price": "200 PLN"
                 }
+            },
+            {
+    
+                "TripId": 3,
+                "Country": "Poland",
+                "Details": {
+                    "NumOfMembers": 2,
+                    "Price": "150 PLN"
+                }
+            },
+            {
+    
+                "TripId": 4,
+                "Country": "Deutschland",
+                "Details": {
+                    "NumOfMembers": 4,
+                    "Price": "300 PLN"
+                }
+            },
+            {
+    
+                "TripId": 5,
+                "Country": "France",
+                "Details": {
+                    "NumOfMembers": 3,
+                    "Price": "200 PLN"
+                }
             }
 
         ]
