@@ -17,7 +17,7 @@ interface TripsFilterStore {
 
 
 const useTripsSelector = create<TripsFilterStore>(set => ({
-    tripFilters: {},
+    tripFilters: {country: 'All'},
     setCountry: (country) => set(store => ({tripFilters: {...store.tripFilters, country}})),
     setMembers: (members) => set(store =>({tripFilters: {...store.tripFilters, members}})),
     setScope: (scope) => set(store => ({tripFilters: {...store.tripFilters, scope}}))
