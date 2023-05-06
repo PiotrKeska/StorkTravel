@@ -16,4 +16,17 @@ const countryFilter = () => {
 
     return rArr;
 }
-export default countryFilter;
+
+const membersFilter = () => {
+    const countriesFilter = countryFilter();
+    const selectedMembers = useTripsSelector((s) => s.tripFilters.members)
+
+    if(selectedMembers !== 'All'){
+        return countriesFilter?.filter((el) => el.Details.NumOfMembers === selectedMembers);
+    }
+
+    return countriesFilter;
+
+}
+
+export default membersFilter;

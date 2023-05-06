@@ -4,7 +4,7 @@ import { create } from "zustand";
 
 interface TripFilters {
     country?: string;
-    members?: number;
+    members?: number | string;
     scope?: string;
 }
 
