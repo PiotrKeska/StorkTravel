@@ -8,6 +8,8 @@ const TripsGrid = () => {
 
   if (error) return null;
   if (isLoading) return <div>Loading....</div>;
+  if (arr?.length === 0)
+    return <div>Sorry we don't have any trips with selected criteria</div>;
 
   return (
     <>
