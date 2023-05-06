@@ -13,7 +13,7 @@
             {
     
                 "TripId": 1,
-                "Country": "Deutschland",
+                "Country": "Germany",
                 "Details": {
                     "NumOfMembers": 4,
                     "Price": "300 PLN"
@@ -33,14 +33,14 @@
                 "TripId": 3,
                 "Country": "Poland",
                 "Details": {
-                    "NumOfMembers": 2,
-                    "Price": "150 PLN"
+                    "NumOfMembers": 3,
+                    "Price": "350 PLN"
                 }
             },
             {
     
                 "TripId": 4,
-                "Country": "Deutschland",
+                "Country": "Germany",
                 "Details": {
                     "NumOfMembers": 4,
                     "Price": "300 PLN"
@@ -53,6 +53,24 @@
                 "Details": {
                     "NumOfMembers": 3,
                     "Price": "200 PLN"
+                }
+            },
+            {
+    
+                "TripId": 6,
+                "Country": "France",
+                "Details": {
+                    "NumOfMembers": 4,
+                    "Price": "400 PLN"
+                }
+            },
+            {
+    
+                "TripId": 7,
+                "Country": "Poland",
+                "Details": {
+                    "NumOfMembers": 1,
+                    "Price": "100 PLN"
                 }
             }
 
