@@ -10,10 +10,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import scopeFilter from "../utils/filters";
+// import scopeFilter from "../utils/filters";
 
 const Home = () => {
-  const arr = scopeFilter();
+  // const arr = scopeFilter();
   // const selectedTripToCard = arr?.filter((el) => el.TripId === 0); co z tym?
 
   return (

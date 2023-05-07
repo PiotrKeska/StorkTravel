@@ -4,14 +4,14 @@ import { create } from "zustand";
 
 interface TripFilters {
     country?: string;
-    members?: number | string;
+    members?: string;
     scope?: number;
 }
 
 interface TripsFilterStore {
     tripFilters: TripFilters,
     setCountry: (country: string) => void;
-    setMembers: (members: number) => void;
+    setMembers: (members: string) => void;
     setScope: (scope: number) => void;
 }
 

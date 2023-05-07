@@ -6,7 +6,7 @@
                 "TripId": 0,
                 "Country": "Poland",
                 "Details": {
-                    "NumOfMembers": 2,
+                    "NumOfMembers": "2",
                     "Price": 150,
                     "Currency": "PLN"
                 }
@@ -16,7 +16,7 @@
                 "TripId": 1,
                 "Country": "Germany",
                 "Details": {
-                    "NumOfMembers": 4,
+                    "NumOfMembers": "4",
                     "Price": 300,
                     "Currency": "PLN"
                 }
@@ -26,7 +26,7 @@
                 "TripId": 2,
                 "Country": "France",
                 "Details": {
-                    "NumOfMembers": 3,
+                    "NumOfMembers": "3",
                     "Price": 200,
                     "Currency": "PLN"
                 }
@@ -36,7 +36,7 @@
                 "TripId": 3,
                 "Country": "Poland",
                 "Details": {
-                    "NumOfMembers": 3,
+                    "NumOfMembers": "3",
                     "Price": 350,
                     "Currency": "PLN"
                 }
@@ -46,7 +46,7 @@
                 "TripId": 4,
                 "Country": "Germany",
                 "Details": {
-                    "NumOfMembers": 4,
+                    "NumOfMembers": "4",
                     "Price": 300,
                     "Currency": "PLN"
                 }
@@ -56,7 +56,7 @@
                 "TripId": 5,
                 "Country": "France",
                 "Details": {
-                    "NumOfMembers": 3,
+                    "NumOfMembers": "3",
                     "Price": 200,
                     "Currency": "PLN"
                 }
@@ -66,7 +66,7 @@
                 "TripId": 6,
                 "Country": "France",
                 "Details": {
-                    "NumOfMembers": 4,
+                    "NumOfMembers": "4",
                     "Price": 400,
                     "Currency": "PLN"
                 }
@@ -76,7 +76,7 @@
                 "TripId": 7,
                 "Country": "Poland",
                 "Details": {
-                    "NumOfMembers": 1,
+                    "NumOfMembers": "1",
                     "Price": 100,
                     "Currency": "PLN"
                 }
