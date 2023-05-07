@@ -42,8 +42,8 @@ const Home = () => {
         </Card>
         <Card height="100%" width="40%">
           <CardBody>
-            <Heading textAlign="center">Stork Trips</Heading>
-            <Text textAlign="inherit">
+            <Heading textAlign="center">Stork Travels</Heading>
+            <Text textAlign="inherit" marginTop={10}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
               exercitationem fugit velit ipsa, similique totam eligendi sint
               eveniet magni perspiciatis, ex deleniti animi rem sapiente unde

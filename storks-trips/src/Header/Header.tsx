@@ -3,7 +3,7 @@ import { Box, Heading } from "@chakra-ui/react";
 const Header = () => {
   return (
     <Box paddingY={5}>
-      <Heading textAlign="center">Stork Trips</Heading>
+      <Heading textAlign="center">Stork Tavels</Heading>
     </Box>
   );
 };
