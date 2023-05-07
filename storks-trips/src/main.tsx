@@ -20,7 +20,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ChakraProvider>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router}></RouterProvider>
-        <App />
       </QueryClientProvider>
     </ChakraProvider>
   </React.StrictMode>
