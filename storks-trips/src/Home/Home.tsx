@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Card,
   CardBody,
@@ -8,7 +7,6 @@ import {
   Divider,
   Flex,
   Heading,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
