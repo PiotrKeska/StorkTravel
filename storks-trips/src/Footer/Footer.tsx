@@ -1,5 +1,18 @@
+import { Box, Text } from "@chakra-ui/react";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <Box
+      justifyContent="center"
+      position="fixed"
+      bottom="0"
+      left="0"
+      width="100%"
+      bg="red"
+    >
+      <Text textAlign="center">Copy rajts Pk 2023</Text>
+    </Box>
+  );
 };
 
 export default Footer;
