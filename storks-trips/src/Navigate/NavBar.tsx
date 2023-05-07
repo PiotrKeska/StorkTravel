@@ -8,16 +8,16 @@ const NavBar = () => {
         <Tabs isFitted variant="enclosed">
           <TabList>
             <Tab>
-              <p>link to Home</p>
+              <NavLink to="home">Home</NavLink>
             </Tab>
             <Tab>
-              <NavLink to="/trips">Trips</NavLink>
+              <NavLink to="trips">Trips</NavLink>
             </Tab>
             <Tab>
-              <p>Opinions</p>
+              <NavLink to="opinions">Opinions</NavLink>
             </Tab>
             <Tab>
-              <p>Contact</p>
+              <NavLink to="contact">Contact</NavLink>
             </Tab>
           </TabList>
         </Tabs>
