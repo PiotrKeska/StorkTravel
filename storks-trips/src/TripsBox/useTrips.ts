@@ -7,7 +7,7 @@ import axios from "axios";
 
 
 interface Details {
-    NumOfMembers: number | string;
+    NumOfMembers: string;
     Price: number;
     Currency: string
 }
