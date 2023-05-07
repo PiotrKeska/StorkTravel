@@ -15,7 +15,7 @@ const TripsGrid = () => {
 
   return (
     <>
-      <Flex>
+      <Flex width="1200px" flexDirection="row" flexWrap="wrap">
         <TripsCards />
       </Flex>
     </>
