@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 import MainLayout from "../Layouts/mainLayout";
+import Trips from "../TripsBox/Trips";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    children: [{ path: "trips", element: <Trips /> }],
   },
 ]);
 

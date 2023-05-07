@@ -1,4 +1,5 @@
 import { Box, Tab, TabList, Tabs } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -9,7 +10,9 @@ const NavBar = () => {
             <Tab>
               <p>link to Home</p>
             </Tab>
-            <Tab>Trips Selector</Tab>
+            <Tab>
+              <NavLink to="/trips">Trips</NavLink>
+            </Tab>
             <Tab>
               <p>Opinions</p>
             </Tab>
