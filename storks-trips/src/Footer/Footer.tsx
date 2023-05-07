@@ -8,7 +8,6 @@ const Footer = () => {
       bottom="0"
       left="0"
       width="100%"
-      bg="red"
     >
       <Text textAlign="center">Copy rajts Pk 2023</Text>
     </Box>
