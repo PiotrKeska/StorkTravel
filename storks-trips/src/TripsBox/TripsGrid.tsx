@@ -1,11 +1,10 @@
-import React from "react";
-import useTrips from "./useTrips";
+import { Box, Flex } from "@chakra-ui/react";
 import scopeFilter from "../utils/filters";
 import TripsCards from "./TripsCards";
-import { Box, Flex } from "@chakra-ui/react";
+import useTrips from "./useTrips";
 
 const TripsGrid = () => {
-  const { data, isLoading, error } = useTrips();
+  const { isLoading, error } = useTrips();
   const arr = scopeFilter();
 
   if (error) return null;
