@@ -1,5 +1,11 @@
+import { Box, Heading } from "@chakra-ui/react";
+
 const Header = () => {
-  return <div>Header - Storks Trips</div>;
+  return (
+    <Box bg="red" paddingY={5}>
+      <Heading textAlign="center">Stork Trips</Heading>
+    </Box>
+  );
 };
 
 export default Header;
