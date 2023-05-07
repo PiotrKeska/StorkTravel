@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import NavBar from "./Navigate/NavBar";
@@ -9,6 +9,7 @@ function App() {
     <>
       <Header />
       <NavBar />
+
       <Flex justifyContent="center">
         <Trips />
       </Flex>
